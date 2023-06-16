@@ -13,7 +13,7 @@ export class AwsCicdPipelineStack extends cdk.Stack {
     new CodePipeline(this, 'Pipeline', {
       pipelineName: 'TestPipeline',
       synth: new ShellStep('Synth', {
-        input: CodePipelineSource.gitHub('', 'main'), // Replace with github link
+        input: CodePipelineSource.gitHub('rjhoppe/aws-cicd-pipeline.git', 'main'), // Replace with github link
         commands: ['npm ci',
                     'npm run build',
                     'npx cdk synth']
