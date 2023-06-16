@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { CodePipeline, CodePipelineSource, ShellStep } from 'aws-cdk-lib/pipelines';
 import { ManualApprovalStep } from 'aws-cdk-lib/pipelines';
-import { MyPipelineAppStage } from './stage';
+// import { MyPipelineAppStage } from './stage';
 
 // import * as sqs from 'aws-cdk-lib/aws-sqs';
 
